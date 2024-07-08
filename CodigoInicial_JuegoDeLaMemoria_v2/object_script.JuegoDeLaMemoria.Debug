@@ -1,0 +1,15 @@
+debug/main.o
+debug/anillo.o
+debug/carta.o
+debug/circulo.o
+debug/cruz.o
+debug/cuadrado.o
+debug/estrella.o
+debug/figura.o
+debug/flecha.o
+debug/juegodelamemoria.o
+debug/mesa.o
+debug/onda.o
+debug/triangulo.o
+debug/moc_carta.o
+debug/moc_juegodelamemoria.o

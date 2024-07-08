@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Software para el Estudio de la Memoria y el Aprendizaje: Fichero Fuente Graficador2D/Juego_SC.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Software para el Estudio de la Memoria y el Aprendizaje
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_juego___s_c_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Juego_SC.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_juego___s_c_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef JUEGO_SC_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define JUEGO_SC_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../SaltoDelCaballo_OpenGL/tablero.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../SaltoDelCaballo_OpenGL/solversaltocaballo.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QOpenGLWidget&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;deque&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dibujo_8h.html">dibujo.h</a>&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_juego___s_c.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_juego___s_c.html">Juego_SC</a> : <span class="keyword">public</span> <a class="code" href="class_q_open_g_l_widget.html">QOpenGLWidget</a></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_juego___s_c.html">Juego_SC</a>(QApplication* pApp);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> setNivelInicio(<span class="keywordtype">int</span> value);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> getTiempoDeFin() <span class="keyword">const</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> getNivel() <span class="keyword">const</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> setCASO_3(<span class="keywordtype">bool</span> value);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setCASO_4(<span class="keywordtype">bool</span> value);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> mousePressEvent(QMouseEvent *event);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> setearNivel(<span class="keywordtype">int</span> nivel);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> cargarDibujo( <a class="code" href="class_dibujo.html">Dibujo</a>* pPtr_dib );</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> limpiarDibujos();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> getEleccion() <span class="keyword">const</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> resumenDelNivel();</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> mostrar(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#a51c6fed0e730608c69f881086eb302e6">   78</a></span>&#160;    QApplication* <a class="code" href="class_juego___s_c.html#a51c6fed0e730608c69f881086eb302e6">ptr_App</a>;</div><div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#a04159bb60a6109fe0b356d86080cbf12">   79</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_juego___s_c.html#a04159bb60a6109fe0b356d86080cbf12">juegoTerminado</a>;</div><div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#afd3c6ba1d460bc7c2b7c2d8c4685ef6d">   80</a></span>&#160;    <a class="code" href="class_tablero.html">Tablero</a> dib_tablero, <a class="code" href="class_juego___s_c.html#afd3c6ba1d460bc7c2b7c2d8c4685ef6d">dib_tablero2</a>;</div><div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#a04cd7935f30ec7fb56eee31a4332d3a8">   81</a></span>&#160;    <a class="code" href="class_solver_salto_caballo.html">SolverSaltoCaballo</a> *solver, *<a class="code" href="class_juego___s_c.html#a04cd7935f30ec7fb56eee31a4332d3a8">solver2</a>;</div><div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#ac1888d1d574b590dfc3c3017e109d965">   82</a></span>&#160;    <a class="code" href="class_solucion.html">Solucion</a> sol, <a class="code" href="class_juego___s_c.html#ac1888d1d574b590dfc3c3017e109d965">sol2</a>;</div><div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#a7f6e86440dc9fec2f941eae066e01c08">   83</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_juego___s_c.html#a7f6e86440dc9fec2f941eae066e01c08">tiempoDeInicio</a>, tiempoDeFin;</div><div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#a821d757987a7d62243f78494d1e6cc8b">   84</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_juego___s_c.html#a821d757987a7d62243f78494d1e6cc8b">nivel</a>;</div><div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#ad0d45eef240d93e19e4e98e169e0081d">   85</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_juego___s_c.html#ad0d45eef240d93e19e4e98e169e0081d">inicio</a>, borrar;</div><div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#aacca05b2e3d5f13f439eaf0947633d85">   86</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_juego___s_c.html#aacca05b2e3d5f13f439eaf0947633d85">CASO_4</a>, CASO_3;</div><div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#af21975282f86a288a12ba3ec1c5b3c89">   87</a></span>&#160;    deque&lt;Dibujo*&gt; <a class="code" href="class_juego___s_c.html#af21975282f86a288a12ba3ec1c5b3c89">ptrs_dib</a>; <span class="comment">// Dibujos que se han de &quot;dibujar&quot;</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//Juegodelcaballo* ptr_juego;</span></div><div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#ab229f425f49335c48afcc0d3a14ca3f1">   89</a></span>&#160;    <span class="keywordtype">double</span> minX, maxX, <a class="code" href="class_juego___s_c.html#ab229f425f49335c48afcc0d3a14ca3f1">minY</a>, maxY;</div><div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#a31f0d11a3a6362529850c5b3cb076764">   90</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_juego___s_c.html#a31f0d11a3a6362529850c5b3cb076764">eleccion</a>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Métodos auxiliares</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> determinarDimensiones();</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// Métodos a redefinir</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> initializeGL() <span class="keyword">override</span>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> resizeGL(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) <span class="keyword">override</span>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> paintGL() <span class="keyword">override</span>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_juego___s_c.html#a3f1742caf3a242699df32779fef94b4f">   98</a></span>&#160;    QApplication* <a class="code" href="class_juego___s_c.html#a3f1742caf3a242699df32779fef94b4f">ptr_app</a>; <span class="comment">// Permite controlar la aplicación.</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif // JUEGO_SC_H</span></div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="ttc" id="class_juego___s_c_html_a821d757987a7d62243f78494d1e6cc8b"><div class="ttname"><a href="class_juego___s_c.html#a821d757987a7d62243f78494d1e6cc8b">Juego_SC::nivel</a></div><div class="ttdeci">int nivel</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00084">Juego_SC.h:84</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_a3f1742caf3a242699df32779fef94b4f"><div class="ttname"><a href="class_juego___s_c.html#a3f1742caf3a242699df32779fef94b4f">Juego_SC::ptr_app</a></div><div class="ttdeci">QApplication * ptr_app</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00098">Juego_SC.h:98</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_afd3c6ba1d460bc7c2b7c2d8c4685ef6d"><div class="ttname"><a href="class_juego___s_c.html#afd3c6ba1d460bc7c2b7c2d8c4685ef6d">Juego_SC::dib_tablero2</a></div><div class="ttdeci">Tablero dib_tablero2</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00080">Juego_SC.h:80</a></div></div>
+<div class="ttc" id="class_solver_salto_caballo_html"><div class="ttname"><a href="class_solver_salto_caballo.html">SolverSaltoCaballo</a></div><div class="ttdoc">SolverSaltoCaballo class. Esta clase encuentra soluciones al problema del salto del caballo...</div><div class="ttdef"><b>Definition:</b> <a href="solversaltocaballo_8h_source.html#l00044">solversaltocaballo.h:44</a></div></div>
+<div class="ttc" id="class_solucion_html"><div class="ttname"><a href="class_solucion.html">Solucion</a></div><div class="ttdoc">The Solucion class. Almacena informacion de una solucion. </div><div class="ttdef"><b>Definition:</b> <a href="solversaltocaballo_8h_source.html#l00022">solversaltocaballo.h:22</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
+<div class="ttc" id="class_juego___s_c_html_ad0d45eef240d93e19e4e98e169e0081d"><div class="ttname"><a href="class_juego___s_c.html#ad0d45eef240d93e19e4e98e169e0081d">Juego_SC::inicio</a></div><div class="ttdeci">bool inicio</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00085">Juego_SC.h:85</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_a04cd7935f30ec7fb56eee31a4332d3a8"><div class="ttname"><a href="class_juego___s_c.html#a04cd7935f30ec7fb56eee31a4332d3a8">Juego_SC::solver2</a></div><div class="ttdeci">SolverSaltoCaballo * solver2</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00081">Juego_SC.h:81</a></div></div>
+<div class="ttc" id="class_q_open_g_l_widget_html"><div class="ttname"><a href="class_q_open_g_l_widget.html">QOpenGLWidget</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_ab229f425f49335c48afcc0d3a14ca3f1"><div class="ttname"><a href="class_juego___s_c.html#ab229f425f49335c48afcc0d3a14ca3f1">Juego_SC::minY</a></div><div class="ttdeci">double minY</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00089">Juego_SC.h:89</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_a7f6e86440dc9fec2f941eae066e01c08"><div class="ttname"><a href="class_juego___s_c.html#a7f6e86440dc9fec2f941eae066e01c08">Juego_SC::tiempoDeInicio</a></div><div class="ttdeci">int tiempoDeInicio</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00083">Juego_SC.h:83</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_a04159bb60a6109fe0b356d86080cbf12"><div class="ttname"><a href="class_juego___s_c.html#a04159bb60a6109fe0b356d86080cbf12">Juego_SC::juegoTerminado</a></div><div class="ttdeci">bool juegoTerminado</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00079">Juego_SC.h:79</a></div></div>
+<div class="ttc" id="dibujo_8h_html"><div class="ttname"><a href="dibujo_8h.html">dibujo.h</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_aacca05b2e3d5f13f439eaf0947633d85"><div class="ttname"><a href="class_juego___s_c.html#aacca05b2e3d5f13f439eaf0947633d85">Juego_SC::CASO_4</a></div><div class="ttdeci">bool CASO_4</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00086">Juego_SC.h:86</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_a31f0d11a3a6362529850c5b3cb076764"><div class="ttname"><a href="class_juego___s_c.html#a31f0d11a3a6362529850c5b3cb076764">Juego_SC::eleccion</a></div><div class="ttdeci">bool eleccion</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00090">Juego_SC.h:90</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_a51c6fed0e730608c69f881086eb302e6"><div class="ttname"><a href="class_juego___s_c.html#a51c6fed0e730608c69f881086eb302e6">Juego_SC::ptr_App</a></div><div class="ttdeci">QApplication * ptr_App</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00078">Juego_SC.h:78</a></div></div>
+<div class="ttc" id="class_dibujo_html"><div class="ttname"><a href="class_dibujo.html">Dibujo</a></div><div class="ttdoc">The Dibujo class. Clase abstracta. Esta clase permite dibujar varias figuras por medio de polimorfism...</div><div class="ttdef"><b>Definition:</b> <a href="dibujo_8h_source.html#l00013">dibujo.h:13</a></div></div>
+<div class="ttc" id="class_tablero_html"><div class="ttname"><a href="class_tablero.html">Tablero</a></div><div class="ttdoc">The Tablero class. Clase derivada de Dibujo. Dibuja un tablero de ajedrez con dos botones al costado...</div><div class="ttdef"><b>Definition:</b> <a href="tablero_8h_source.html#l00015">tablero.h:15</a></div></div>
+<div class="ttc" id="class_juego___s_c_html"><div class="ttname"><a href="class_juego___s_c.html">Juego_SC</a></div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00020">Juego_SC.h:20</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_ac1888d1d574b590dfc3c3017e109d965"><div class="ttname"><a href="class_juego___s_c.html#ac1888d1d574b590dfc3c3017e109d965">Juego_SC::sol2</a></div><div class="ttdeci">Solucion sol2</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00082">Juego_SC.h:82</a></div></div>
+<div class="ttc" id="class_juego___s_c_html_af21975282f86a288a12ba3ec1c5b3c89"><div class="ttname"><a href="class_juego___s_c.html#af21975282f86a288a12ba3ec1c5b3c89">Juego_SC::ptrs_dib</a></div><div class="ttdeci">deque&lt; Dibujo * &gt; ptrs_dib</div><div class="ttdef"><b>Definition:</b> <a href="_juego___s_c_8h_source.html#l00087">Juego_SC.h:87</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_b9aa365f3629a650f8f0b66c90dd5c77.html">Graficador2D</a></li><li class="navelem"><a class="el" href="_juego___s_c_8h.html">Juego_SC.h</a></li>
+    <li class="footer">Generado el Miércoles, 12 de Agosto de 2020 16:37:38 para Software para el Estudio de la Memoria y el Aprendizaje por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

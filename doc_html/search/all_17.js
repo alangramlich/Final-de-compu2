@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['_7eanillo',['~Anillo',['../class_anillo.html#a711be4696a9551121319c00f825c0769',1,'Anillo']]],
+  ['_7ecarta',['~Carta',['../class_carta.html#ae3f30ed1ac1712b56330186f9e2139ec',1,'Carta']]],
+  ['_7ecirculo',['~Circulo',['../class_circulo.html#a8efe39e0e89487519cd802f0738d3bf4',1,'Circulo']]],
+  ['_7ecruz',['~Cruz',['../class_cruz.html#af47f7b6fc8af35f4ef4e1821590ea03d',1,'Cruz']]],
+  ['_7ecuadrado',['~Cuadrado',['../class_cuadrado.html#a9f5bf29c9b8368ad45a4a3c12f9fd7c2',1,'Cuadrado']]],
+  ['_7edibujo',['~Dibujo',['../class_dibujo.html#ad3ae34c6b06b6e578cab18b61fd91530',1,'Dibujo']]],
+  ['_7eespiral',['~Espiral',['../class_espiral.html#a367429c1ce3e0532fb81d60066ba6158',1,'Espiral']]],
+  ['_7eestrella',['~Estrella',['../class_estrella.html#a33ea555ae5f91b74999ba45f63c0e362',1,'Estrella']]],
+  ['_7efigura',['~Figura',['../class_figura.html#a6130eb548893c36efcb7933e2da6821e',1,'Figura']]],
+  ['_7eflecha',['~Flecha',['../class_flecha.html#a7d464de55f86e6c41683d0279e7fe162',1,'Flecha']]],
+  ['_7ejuegodelamemoria',['~JuegoDeLaMemoria',['../class_juego_de_la_memoria.html#acab3c63f0bc770293727f9393c636333',1,'JuegoDeLaMemoria']]],
+  ['_7emesa',['~Mesa',['../class_mesa.html#aa0a1b83b8058f80f4f27ec46cc5e9524',1,'Mesa']]],
+  ['_7eonda',['~Onda',['../class_onda.html#ac8030c462c82f15fcf8a26770d96698f',1,'Onda']]],
+  ['_7esolversaltocaballo',['~SolverSaltoCaballo',['../class_solver_salto_caballo.html#acbf0676092d5a3c6e038c8daa3787a98',1,'SolverSaltoCaballo']]],
+  ['_7etetera',['~Tetera',['../class_tetera.html#a27bb005716ae71efe9a522f39afeffef',1,'Tetera']]],
+  ['_7etrianglo',['~Trianglo',['../class_trianglo.html#a7a91905167afa6dd9f2a7d0ba82dce65',1,'Trianglo']]]
+];

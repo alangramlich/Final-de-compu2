@@ -1,0 +1,15 @@
+release/main.o
+release/anillo.o
+release/carta.o
+release/circulo.o
+release/cruz.o
+release/cuadrado.o
+release/estrella.o
+release/figura.o
+release/flecha.o
+release/juegodelamemoria.o
+release/mesa.o
+release/onda.o
+release/triangulo.o
+release/moc_carta.o
+release/moc_juegodelamemoria.o
